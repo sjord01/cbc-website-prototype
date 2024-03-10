@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *:after {
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font-bold: 'Open-SansBold', sans-serif;
+}
+
+  
+@font-face {
+    font-family: 'Open-SansBold';
+    src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+/* NAVIGATION */
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.header-wrapper {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80rem;
+    overflow: visible;
+    padding-left: 16px;
+    position: relative;
+}
+
+.logo {
+    width: auto;
+    height: 18px;
+}
+
+.btn-menu {
+    align-self: center;     
+    color: #e60505;
+    font-size: 1rem;
+    font-family: var(--heading-font-bold);
+    font-weight: 700;
+    overflow: hidden;
+    padding: 12px 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+.btn-menu::before {
+    border-left: 1px solid #e60505;
+    content: "";
+    height: 1.375rem;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+}
+
+.menu-icon {
+    display: inline;
+}
+
+.menu-icon .chevron-icon {
+    margin-left: 5px;
+    background-color: beige;
+    vertical-align: middle;
+}
+
+.btn-profile, .btn-search {
+    fill: #545454;
+    stroke: #545454;
+    background-color: transparent;
+    border: none;
+    color: #545454;
+    cursor: pointer;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.side-navigation {
+    align-self: center;
+    display: flex;
+    margin-left: auto;
+    min-width: 3rem;
+    text-align: center;
+}
+
+.txt-side-nav {
+    font-family: var(--heading-font-bold);
+    font-size: 14px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
