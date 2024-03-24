@@ -150,7 +150,7 @@ h2 {
 h3 {
     font-size: 1.15rem;
 }
-p, span {
+p, span, a {
     font-family: var(--heading-font-regular);
 }
 
@@ -284,6 +284,22 @@ section {
     grid-area: 8 / 1 / 8 / 2;
 }
 
+.tile-17 {
+    grid-area: 9 / 1 / 9 / 2;
+}
+
+.tile-18 {
+    grid-area: 10 / 1 / 10 / 2;
+}
+
+.tile-19 {
+    grid-area: 11 / 1 / 11 / 2;
+}
+
+.tile-20 {
+    grid-area: 12 / 1 / 12 / 2;
+}
+
 .tile-grid {
     list-style: none;
     margin: 0;
@@ -400,7 +416,7 @@ input {
     width: 100%;
 }
 
-.texts-now-plaing {
+.texts-now-playing {
     flex-direction: column;
     margin: 16px 0 16px 16px
 }
@@ -421,6 +437,82 @@ input {
     display: flex;
     justify-content: end;
 }
+
+/* FOOTER */
+footer {
+    margin-top: 48px;
+    padding-top: 1rem;
+    border-top: 1px solid #eaeaea;
+}
+
+.footer-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80rem;
+}
+
+.footer-column {
+    flex: 1 1 130px;
+    font-family: var(--heading-font-bold);
+    font-size: .85em;
+    padding: 16px;
+}
+
+.basic-footer .footer-column {
+    align-self: center;
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer-item {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #0550c8;
+}
+
+.basic-footer {
+    max-width: 100%;
+    background-color: #000;
+    color: #fff;
+}
+
+.cbc-radio-logo {
+    width: 220px;
+    height: auto;
+    object-fit: cover;
+}
+
+.radio-canada {
+    font-family: var(--heading-font-bold);
+    font-size: .85em;
+    color: #fff;
+}
+
+.footer-radio-logo {
+    flex: 1 1 230px;
+    text-align: center;
+}
+
+.footer-copyright {
+    flex: 2 0 230px;
+    text-align: center;
+}
+
+.footer-radio-canada {
+    flex: 1 1 130px;
+    text-align: center;
+}
+
 
 @media (min-width: 1069px) {
     .wrapper-ad-label-main {
@@ -521,6 +613,22 @@ input {
     .tile-16 {
         grid-area: 2 / 4 / 2 / 5;
     }
+
+    .tile-17 {
+        grid-area: 3 / 1 / 3 / 2;
+    }
+
+    .tile-18 {
+        grid-area: 3 / 2 / 3 / 3;
+    }
+
+    .tile-19 {
+        grid-area: 3 / 3 / 3 / 4;
+    }
+
+    .tile-20 {
+        grid-area: 3 / 4 / 3 / 5;
+    }
 }
 
 @media (min-width: 531px) and (max-width: 1002px) {
@@ -542,7 +650,7 @@ input {
     }
 
     .tile-04 {
-        grid-area: 3 / 1 / 3 / 3;
+        grid-area: 3 / 1 / 3 / 2;
     }
 
     .tile-05 {
@@ -589,6 +697,22 @@ input {
         grid-area: 4 / 2 / 4 / 3;
     }
 
+    .tile-17 {
+        grid-area: 5 / 1 / 5/ 2;
+    }
+
+    .tile-18 {
+        grid-area: 5 / 2 / 5 / 3;
+    }
+
+    .tile-19 {
+        grid-area: 5 / 1 / 5/ 2;
+    }
+
+    .tile-20 {
+        grid-area: 5 / 2 / 5 / 3;
+    }
+
     .content-wrapper {
         display: flex;
         flex-flow: row wrap;
@@ -601,6 +725,8 @@ input {
 
 @media (min-width: 1021px) {
     .live-radio-flex {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         justify-content: space-between;
 
     }
